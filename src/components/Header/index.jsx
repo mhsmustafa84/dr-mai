@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import SocialWidget from "../Widget/SocialWidget";
 import Newsletter from "../Widget/Newsletter";
 import "./header.scss";
 import ContactInfoWidget from "../Widget/ContactInfoWidget";
 import Div from "../Div";
-import DropDown from "./DropDown";
 
-export default function Header({ variant }) {
+export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const [sideHeaderToggle, setSideHeaderToggle] = useState(false);
   const [mobileToggle, setMobileToggle] = useState(false);
@@ -24,9 +23,9 @@ export default function Header({ variant }) {
   return (
     <>
       <header
-        className={`cs-site_header cs-style1 text-uppercase ${
-          variant ? variant : ""
-        } cs-sticky_header ${isSticky ? "cs-sticky_header_active" : ""}`}
+        className={`cs-site_header cs-style1 text-uppercase cs-sticky_header ${
+          isSticky ? "cs-sticky_header_active" : ""
+        }`}
       >
         <Div className="cs-main_header">
           <Div className="container">

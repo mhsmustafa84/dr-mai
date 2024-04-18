@@ -25,7 +25,7 @@ export default function ContactPage() {
           <Div>
             <SectionHeading
               title="Do you have anything <br/>in your mind?"
-              subtitle="Getting Touch"
+              subtitle=""
             />
             <Spacing lg="55" md="30" />
             <ContactInfoWidget withIcon />

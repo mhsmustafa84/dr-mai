@@ -1,33 +1,13 @@
-import React, { useEffect } from 'react';
-import { pageTitle } from '../../helper';
-import Cta from '../Cta';
-import FunFact from '../FunFact';
-import TeamSlider from '../Slider/TeamSlider';
-import PageHeading from '../PageHeading';
-import Div from '../Div';
-import SectionHeading from '../SectionHeading';
-import Spacing from '../Spacing';
-const funfaceData = [
-  {
-    title: 'Global Happy Clients',
-    factNumber: '40K',
-  },
-  {
-    title: 'Project Completed',
-    factNumber: '50K',
-  },
-  {
-    title: 'Team Members',
-    factNumber: '245',
-  },
-  {
-    title: 'Digital products',
-    factNumber: '550',
-  },
-];
+import { useEffect } from "react";
+import { pageTitle } from "../../helper";
+import Cta from "../Cta";
+import PageHeading from "../PageHeading";
+import Div from "../Div";
+import SectionHeading from "../SectionHeading";
+import Spacing from "../Spacing";
 
 export default function AboutPage() {
-  pageTitle('About');
+  pageTitle("About");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,11 +25,15 @@ export default function AboutPage() {
           <Div className="col-xl-5 col-lg-7">
             <SectionHeading
               title="A Leading Light in Plastic Surgery Across UAE"
-              subtitle="About me"
+              subtitle=""
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-              Celebrated as one of the most distinguished plastic surgeons in Dubai and the wider UAE. Renowned for her expertise and a personalized approach to care, she stands as a beacon of excellence in cosmetic and reconstructive surgery, attracting patients from across the Emirates and beyond.
+                Celebrated as one of the most distinguished plastic surgeons in
+                Dubai and the wider UAE. Renowned for her expertise and a
+                personalized approach to care, she stands as a beacon of
+                excellence in cosmetic and reconstructive surgery, attracting
+                patients from across the Emirates and beyond.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
@@ -109,15 +93,24 @@ export default function AboutPage() {
           <Div className="col-xl-5 offset-xl-1 col-lg-6">
             <SectionHeading
               title="Comprehensive suite of surgical and non-surgical procedures"
-              subtitle="Why Choose me"
+              subtitle=""
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-              True beauty resonates when it aligns with the individual’s essence. My mission is to blend technical precision with an understanding of each patient’s unique desires, crafting results that not only enhance but truly embody their personal and cultural identity.
+                True beauty resonates when it aligns with the individual’s
+                essence. My mission is to blend technical precision with an
+                understanding of each patient’s unique desires, crafting results
+                that not only enhance but truly embody their personal and
+                cultural identity.
               </p>
               <Spacing lg="15" md="15" />
               <p className="cs-m0">
-              Discover the transformative possibilities in vibrant heart of Dubai. Dr. Mai Rostom is dedicated to guiding you on a path of self-discovery and aesthetic fulfillment, where your vision of beauty becomes a reality. Schedule your consultation today and take the first step towards embracing your best self with one of Dubai’s most esteemed plastic surgery experts.
+                Discover the transformative possibilities in vibrant heart of
+                Dubai. Dr. Mai Rostom is dedicated to guiding you on a path of
+                self-discovery and aesthetic fulfillment, where your vision of
+                beauty becomes a reality. Schedule your consultation today and
+                take the first step towards embracing your best self with one of
+                Dubai’s most esteemed plastic surgery experts.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
@@ -139,8 +132,8 @@ export default function AboutPage() {
       <Spacing lg="150" md="80" />
       <Div className="container">
         <Cta
-         title="Start Your Journey Towards Confidence and Radiance"
-         btnText="Book Your Consultation"
+          title="Start Your Journey Towards Confidence and Radiance"
+          btnText="Book Your Consultation"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />

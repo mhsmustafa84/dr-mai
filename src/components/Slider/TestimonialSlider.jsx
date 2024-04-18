@@ -1,41 +1,41 @@
-import React, { useState } from 'react';
-import Slider from 'react-slick';
-import { Icon } from '@iconify/react';
-import Testimonial from '../Testimonial';
-import Div from '../Div';
-import Spacing from '../Spacing';
+import { useState } from "react";
+import Slider from "react-slick";
+import { Icon } from "@iconify/react";
+import Testimonial from "../Testimonial";
+import Div from "../Div";
+import Spacing from "../Spacing";
 const testimonialData = [
   {
-    testimonialThumb: '/images/testimonial_1.jpeg',
+    testimonialThumb: "/images/testimonial_1.jpeg",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '4',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "4",
   },
   {
-    testimonialThumb: '/images/testimonial_2.jpeg',
+    testimonialThumb: "/images/testimonial_2.jpeg",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '5',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
   },
   {
-    testimonialThumb: '/images/testimonial_3.jpeg',
+    testimonialThumb: "/images/testimonial_3.jpeg",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '4.5',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "4.5",
   },
   {
-    testimonialThumb: '/images/testimonial_1.jpeg',
+    testimonialThumb: "/images/testimonial_1.jpeg",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '3.5',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "3.5",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function TestimonialSlider() {
     <div
       {...props}
       className={
-        'slick-prev slick-arrow' + (currentSlide === 0 ? ' slick-disabled' : '')
+        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
@@ -59,8 +59,8 @@ export default function TestimonialSlider() {
     <div
       {...props}
       className={
-        'slick-next slick-arrow' +
-        (currentSlide === slideCount - 1 ? ' slick-disabled' : '')
+        "slick-next slick-arrow" +
+        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
@@ -70,7 +70,7 @@ export default function TestimonialSlider() {
   );
   return (
     <>
-      <Div className="cs-gradient_bg_1 cs-shape_wrap_3 cs-parallax">
+      <Div className="cs-shape_wrap_3 cs-parallax">
         <Spacing lg="130" md="80" />
         <Div className="cs-shape_3 cs-to_up">
           <img src="/images/shape_1.svg" alt="Shape" />
@@ -80,7 +80,7 @@ export default function TestimonialSlider() {
             <Div className="cs-testimonial_slider_left">
               <Slider
                 asNavFor={nav1}
-                ref={slider2 => setNav2(slider2)}
+                ref={(slider2) => setNav2(slider2)}
                 slidesToShow={3}
                 swipeToSlide={true}
                 focusOnSelect={true}
@@ -102,7 +102,7 @@ export default function TestimonialSlider() {
             <Div className="cs-testimonial_slider_right">
               <Slider
                 asNavFor={nav2}
-                ref={slider1 => setNav1(slider1)}
+                ref={(slider1) => setNav1(slider1)}
                 prevArrow={<SlickArrowLeft />}
                 nextArrow={<SlickArrowRight />}
                 className="cs-arrow_style1"

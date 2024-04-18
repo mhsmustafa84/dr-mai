@@ -1,56 +1,55 @@
-import { Icon } from '@iconify/react';
-import React from 'react';
-import Slider from 'react-slick';
-import Div from '../Div';
-import TestimonialStyle2 from '../Testimonial/TestimonialStyle2';
+import { Icon } from "@iconify/react";
+import Slider from "react-slick";
+import Div from "../Div";
+import TestimonialStyle2 from "../Testimonial/TestimonialStyle2";
 const testimonialData = [
   {
-    avatarImgUrl: '/images/avatar_5.png',
+    avatarImgUrl: "/images/avatar_5.png",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '5',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
   },
   {
-    avatarImgUrl: '/images/avatar_6.png',
+    avatarImgUrl: "/images/avatar_6.png",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '5',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
   },
   {
-    avatarImgUrl: '/images/avatar_7.png',
+    avatarImgUrl: "/images/avatar_7.png",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '4',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "4",
   },
   {
-    avatarImgUrl: '/images/avatar_5.png',
+    avatarImgUrl: "/images/avatar_5.png",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '5',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
   },
   {
-    avatarImgUrl: '/images/avatar_6.png',
+    avatarImgUrl: "/images/avatar_6.png",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '5',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
   },
   {
-    avatarImgUrl: '/images/avatar_7.png',
+    avatarImgUrl: "/images/avatar_7.png",
     testimonialText:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.',
-    avatarName: 'Someone Name',
-    avatarDesignation: 'Job HERE',
-    ratings: '4',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "4",
   },
 ];
 
@@ -62,7 +61,7 @@ export default function TestimonialSliderStyle4() {
     <div
       {...props}
       className={
-        'slick-prev slick-arrow' + (currentSlide === 0 ? ' slick-disabled' : '')
+        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
@@ -74,8 +73,8 @@ export default function TestimonialSliderStyle4() {
     <div
       {...props}
       className={
-        'slick-next slick-arrow' +
-        (currentSlide === slideCount - 1 ? ' slick-disabled' : '')
+        "slick-next slick-arrow" +
+        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}

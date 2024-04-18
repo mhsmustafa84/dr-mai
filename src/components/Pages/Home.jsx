@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import Hero11 from "../Hero/Hero11";
 import SectionHeading from "../SectionHeading";
@@ -9,7 +9,7 @@ import Cta from "../Cta";
 import FunFact3 from "../FunFact/FunFact3";
 import { pageTitle } from "../../helper";
 import Portfolio from "../Portfolio";
-import TestimonialSliderStyle4 from "../Slider/TestimonialSliderStyle4";
+import TestimonialSlider from "../Slider/TestimonialSlider";
 const funfaceData = [
   {
     title:
@@ -347,10 +347,8 @@ export default function PersonalPortfolioHome() {
             title="What clients say <br>about Dr. Mai"
             subtitle=""
           />
-          <div className="cs-height_90 cs-height_lg_45" />
-          <TestimonialSliderStyle4 />
+          <TestimonialSlider />
         </div>
-        <div className="cs-height_150 cs-height_lg_80" />
       </section>
       <Cta
         title="Start Your Journey Towards Confidence and Radiance"
