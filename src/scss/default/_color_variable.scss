@@ -1,0 +1,14 @@
+/*--------------------------------------------------------------
+## Basic Color
+----------------------------------------------------------------*/
+:root {
+  --accent: #f47d6a;
+}
+$white: #fff;
+$black: #161616;
+$primary: #fefefe;
+$secondary: rgba($primary, 0.7);
+$ternary: #999696;
+$border: #4d4d4d;
+$gray: #076e83;
+$accent: var(--accent);
