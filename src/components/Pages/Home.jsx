@@ -161,7 +161,7 @@ export default function PersonalPortfolioHome() {
         subtitle="Recognized as one of the leading female plastic surgeons in Dubai, specializing in a blend of aesthetic enhancements and reconstructive procedures. Her practice is dedicated to transforming lives through personalized care, supported by the latest advancements in plastic surgery."
         btnLink="/portfolio"
         // btnText="See Portfolio"
-        imgUrl="/images/hero_img_5.png"
+        imgUrl="/images/mai/1.png"
         experienceTitle="years experience in Plastic Surgery"
         experienceNumber="07+"
         projectTitle="250+"

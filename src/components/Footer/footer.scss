@@ -37,7 +37,7 @@
   li {
     &:not(:last-child) {
       &::after {
-        content: '|';
+        content: "|";
         margin: 0 10px;
         position: relative;
         top: -1px;
@@ -49,6 +49,9 @@
 .cs-text_widget {
   p {
     margin: 0;
+  }
+  img {
+    max-height: 150px;
   }
   img + p {
     margin-top: 30px;
@@ -132,14 +135,13 @@
   }
 }
 
-
 .cs-bottom_footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 0;
   border-top: 1px solid $border;
-  >* {
+  > * {
     padding: 4px 0;
   }
 }
@@ -161,21 +163,21 @@
 @media screen and (max-width: 991px) {
   .cs-widget_title {
     margin-bottom: 20px;
-}
-.cs-text_widget img + p {
-  margin-top: 20px;
-}
-.cs-menu_widget.cs-style1 li:not(:last-child) {
-  margin-bottom: 10px;
-}
+  }
+  .cs-text_widget img + p {
+    margin-top: 20px;
+  }
+  .cs-menu_widget.cs-style1 li:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
-.cs-text_widget + .cs-social_btns.cs-style1,
-.cs-newsletter.cs-style1 .cs-newsletter_text {
-  margin-top: 15px;
-}
-.cs-fooer_main {
-  padding: 60px 0 15px;
-}
+  .cs-text_widget + .cs-social_btns.cs-style1,
+  .cs-newsletter.cs-style1 .cs-newsletter_text {
+    margin-top: 15px;
+  }
+  .cs-fooer_main {
+    padding: 60px 0 15px;
+  }
 }
 @media screen and (max-width: 767px) {
   .cs-bottom_footer {
@@ -185,4 +187,5 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+}

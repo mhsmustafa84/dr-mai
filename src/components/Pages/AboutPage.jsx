@@ -42,15 +42,16 @@ export default function AboutPage() {
           </Div>
           <Div className="col-lg-5 offset-xl-2">
             <img
-              src="/images/about_img_1.jpeg"
+              src="/images/mai/3.png"
               alt="About"
               className="w-100 cs-radius_15"
+              style={{ marginTop: "-100px" }}
             />
             <Spacing lg="25" md="25" />
           </Div>
-          <Div className="col-lg-7">
+          {/* <Div className="col-lg-7">
             <img
-              src="/images/about_img_2.jpeg"
+              src="/images/mai/3.png"
               alt="About"
               className="w-100 cs-radius_15"
             />
@@ -58,23 +59,14 @@ export default function AboutPage() {
           </Div>
           <Div className="col-lg-5">
             <img
-              src="/images/about_img_3.jpeg"
+              src="/images/mai/1.png"
               alt="About"
               className="w-100 cs-radius_15"
             />
             <Spacing lg="25" md="25" />
-          </Div>
+          </Div> */}
         </Div>
       </Div>
-      {/* <Spacing lg="75" md="55" />
-      <Div className="container">
-        <FunFact
-          title="Our fun fact"
-          subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
-          data={funfaceData}
-        />
-      </Div> */}
-
       <Spacing lg="100" md="80" />
       <Div className="container">
         <Div className="row">
@@ -82,7 +74,7 @@ export default function AboutPage() {
             <Div className="cs-image_layer cs-style1">
               <Div className="cs-image_layer_in">
                 <img
-                  src="/images/about_img_4.jpeg"
+                  src="/images/mai/2.png"
                   alt="About"
                   className="w-100 cs-radius_15"
                 />

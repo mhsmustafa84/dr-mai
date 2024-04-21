@@ -44,10 +44,10 @@ export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
           <Div className="row">
             <Div className="col-lg-3 col-sm-6">
               <Div className="cs-footer_item">
-                DR Mai
+                {/* DR Mai */}
                 <TextWidget
-                  // logoSrc="/images/footer_logo.svg"
-                  // logoAlt="Logo"
+                  logoSrc="/images/mai/logo.png"
+                  logoAlt="Logo"
                   text="Welcome to Dr. Mai Rostom’s Plastic Surgery Practice in Dubai"
                 />
                 <SocialWidget />
