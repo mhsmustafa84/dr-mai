@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { pageTitle } from "../../helper";
 import Accordion from "../Accordion";
 import Button from "../Button";
@@ -17,7 +17,7 @@ export default function FaqPage() {
     <>
       <PageHeading
         title="Frequently Asked Questions"
-        bgSrc="/images/about_hero_bg.jpeg"
+        bgSrc="/images/mai/bg-04.jpg"
         pageLinkText="FAQ"
       />
       <Spacing lg="150" md="80" />

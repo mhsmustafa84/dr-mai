@@ -302,10 +302,8 @@
 .cs-site_branding {
   display: inline-block;
   img {
-    max-height: 80px;
+    max-height: 50px;
   }
-  border-radius: 50%;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 1200px) {

@@ -5,6 +5,7 @@ import Newsletter from "../Widget/Newsletter";
 import "./header.scss";
 import ContactInfoWidget from "../Widget/ContactInfoWidget";
 import Div from "../Div";
+import DropDown from "./DropDown";
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -32,8 +33,7 @@ export default function Header() {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" to="/">
-                  <img src="/images/mai/logo.png" alt="Logo" />
-                  {/* Dr. Mai */}
+                  <img src="/images/mai/header-logo.png" alt="Logo" />
                 </Link>
               </Div>
               <Div className="cs-main_header_center">
@@ -55,13 +55,44 @@ export default function Header() {
                         About
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink
-                        to="service"
-                        onClick={() => setMobileToggle(false)}
-                      >
-                        Services
-                      </NavLink>
+                    <li className="menu-item-has-children">
+                      <a>Services</a>
+                      <DropDown>
+                        <ul>
+                          <li>
+                            <Link
+                              to="/service/cosmetic-surgery"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Cosmetic Surgery
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/service/reconstructive-surgery"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Reconstructive Surgery
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/service/hand-surgery"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Hand Surgery
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/service/non-surgical-treatments"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Non-Surgical Treatments
+                            </Link>
+                          </li>
+                        </ul>
+                      </DropDown>
                     </li>
                     <li>
                       <Link

@@ -16,7 +16,7 @@ export default function AboutPage() {
     <>
       <PageHeading
         title="About Dr. Mai"
-        bgSrc="images/about_hero_bg.jpeg"
+        bgSrc="images/mai/bg-01.jpg"
         pageLinkText="About"
       />
       <Spacing lg="150" md="80" />

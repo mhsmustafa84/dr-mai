@@ -1020,16 +1020,16 @@ label {
   .cs-image_layer_in {
     position: relative;
     border-radius: 15px;
-    &::after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      right: -60px;
-      bottom: -60px;
-      background-color: $accent;
-      border-radius: inherit;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 100%;
+    //   right: -60px;
+    //   bottom: -60px;
+    //   background-color: $accent;
+    //   border-radius: inherit;
+    // }
   }
   &.cs-size_md {
     padding-right: 20px;

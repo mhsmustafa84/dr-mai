@@ -7,28 +7,28 @@ const serviceData = [
     title: "Cosmetic Surgery",
     subtitle:
       "Elevate your appearance with our tailored cosmetic surgery options. Dr. Rostom combines artistic vision with surgical precision to enhance your natural beauty",
-    imgUrl: "/images/service_7.jpeg",
+    imgUrl: "/images/mai/service1.png",
     href: "/service/cosmetic-surgery",
   },
   {
     title: "Reconstructive Surgery",
     subtitle:
       "Regain your form and function with Dr. Rostom’s expert reconstructive surgery services, offering hope and restoration",
-    imgUrl: "/images/service_8.jpeg",
+    imgUrl: "/images/mai/service2.png",
     href: "/service/reconstructive-surgery",
   },
   {
     title: "Hand Surgery",
     subtitle:
       "Dr. Rostom specializes in hand surgery, addressing both aesthetic and functional concerns with outstanding outcomes",
-    imgUrl: "/images/service_9.jpeg",
+    imgUrl: "/images/mai/service3.png",
     href: "/service/hand-surgery",
   },
   {
     title: "Non-Surgical Treatments",
     subtitle:
       "Discover our array of non-surgical treatments designed to rejuvenate and enhance without the need for surgery",
-    imgUrl: "/images/service_10.jpeg",
+    imgUrl: "/images/mai/service4.png",
     href: "/service/non-surgical-treatments",
   },
 ];

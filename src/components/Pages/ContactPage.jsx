@@ -16,7 +16,7 @@ export default function ContactPage() {
     <>
       <PageHeading
         title="Contact me"
-        bgSrc="/images/contact_hero_bg.jpeg"
+        bgSrc="/images/mai/bg-03.jpg"
         pageLinkText="Contact"
       />
       <Spacing lg="150" md="80" />
