@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { pageTitle } from "../../helper";
 import Accordion from "../Accordion";
 import Button from "../Button";
@@ -8,8 +8,58 @@ import Div from "../Div";
 import PageHeading from "../PageHeading";
 import Spacing from "../Spacing";
 
+const accordionData = {
+  faq1: [
+    {
+      question: "How should I choose a surgeon?",
+      answer:
+        "When you're looking to choose a surgeon it's essential to opt for a plastic surgeon based in Dubai who holds certification and expertise, in procedures. Dr. Mai Rostom, a practicing surgeon in Dubai, UAE is certified in plastic and aesthetic surgery by the UK board. Is registered as a specialist with the GMC. She specializes in performing surgeries tailored to needs. Ensuring that your surgeon is qualified and specialized in the procedures you're interested in, like breast augmentation, mummy makeovers and liposuction is crucial.",
+    },
+    {
+      question: "Is it necessary to quit smoking before undergoing surgery?",
+      answer:
+        "It's definitely important to quit smoking before undergoing surgery. While smoking's prevalent in Dubai kicking the habit – be it cigarettes, vapes or hookah – is crucial for your well being. Being smoke free can lower the chances of complications. Enhance your surgery recovery process. Dr. Mai Rostom emphasizes the significance of honesty regarding your smoking habits to prevent issues with wound healing and ensure a recovery.",
+    },
+    {
+      question: "What is the best age to consider plastic surgery?",
+      answer:
+        "Regarding age considerations, for surgery there is no age requirement; it varies depending on needs and circumstances. Younger people might choose procedures, like breast enhancement or nose reshaping while older individuals often look into options such as facelifts or eyelid surgeries. Dr. Rostom suggests that the best time for a procedure is when a patient feels ready and meets the health requirements. In Dubai, UAE Dr. Rostoms practice only recommends treatments that address your concerns.",
+    },
+    {
+      question: "How secure is surgery?",
+      answer:
+        "When it comes to the safety of surgery although all surgeries carry risks Dr. Rostom takes precautions to minimize complications through planning and extensive surgical experience. Following guidelines and openly discussing any health conditions with your surgeon are steps to ensure a procedure and a smooth recovery process. Dr. Rostom upholds standards of care by performing surgeries at top tier hospitals, in Dubai.",
+    },
+  ],
+  faq2: [
+    {
+      question: "Can you explain what a mummy makeover entails?",
+      answer:
+        "Curious about what a mummy makeover entails? A mummy makeover is a procedure offered in Dubai and the UAE that involves combining surgeries to address changes after pregnancy. Typically including treatments for breasts and abdomen reshaping along with liposuction for body contouring. Dr. Rostom adopts an approach, by consulting with patients to determine customized procedures tailored to each womans requirements with an aim to restore their pre pregnancy silhouette.",
+    },
+    {
+      question: "What options are available for liposuction?",
+      answer:
+        "Dr. Rostom provides liposuction techniques in Dubai, such as power assisted liposuction (PAL) ultrasound assisted (VASER) and laser assisted methods. Advanced technologies like J Plasma (Renuvion) and BodyTite are used to enhance skin tightening. Dr. Rostoms expertise in liposuction ensures that patients achieve their desired results through approaches in the UAE.",
+    },
+    {
+      question:
+        "Do I need to wear a compression garment after undergoing liposuction?",
+      answer:
+        "Wearing a compression garment is essential during the weeks following liposuction, except when showering or bathing. This practice is highly effective in reducing scarring and bruising in climates like Dubai, UAE. Adhering to care instructions is crucial for healing and maintaining the benefits of liposuction.",
+    },
+    {
+      question: "What distinguishes a plastic surgeon from a surgeon?",
+      answer:
+        "The main difference lies in their training backgrounds. Plastic surgeons like Dr. Rostom, who predominantly practices in Dubai, UAE undergo training encompassing both cosmetic procedures. On the hand cosmetic surgeons typically focus on enhancing appearance without training in surgical procedures. Dr. Rostoms credentials include certifications and fellowships in plastic, aesthetic and hand surgery highlighting her expertise and qualifications.",
+    },
+  ],
+};
+
 export default function FaqPage() {
   pageTitle("Frequently Asked Questions");
+  const [faq, setFaq] = useState(accordionData.faq1);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -32,40 +82,22 @@ export default function FaqPage() {
                   <Button
                     variant="cs-type2"
                     btnLink="/faq"
-                    btnText="FAQ Category1"
+                    btnText="Pre-Surgery Considerations"
                     icon={
                       <Icon icon="material-symbols:content-copy-outline-rounded" />
                     }
+                    onClick={() => setFaq(accordionData.faq1)}
                   />
                 </li>
                 <li>
                   <Button
                     variant="cs-type2"
                     btnLink="/faq"
-                    btnText="FAQ Category2"
+                    btnText="Specific Procedures and Post-Surgery Care"
                     icon={
                       <Icon icon="material-symbols:content-copy-outline-rounded" />
                     }
-                  />
-                </li>
-                <li>
-                  <Button
-                    variant="cs-type2"
-                    btnLink="/faq"
-                    btnText="FAQ Category3"
-                    icon={
-                      <Icon icon="material-symbols:content-copy-outline-rounded" />
-                    }
-                  />
-                </li>
-                <li>
-                  <Button
-                    variant="cs-type2"
-                    btnLink="/faq"
-                    btnText="FAQ Category4"
-                    icon={
-                      <Icon icon="material-symbols:content-copy-outline-rounded" />
-                    }
+                    onClick={() => setFaq(accordionData.faq2)}
                   />
                 </li>
               </ul>
@@ -73,12 +105,11 @@ export default function FaqPage() {
           </Div>
           <Div className="col-lg-7 offset-lg-1">
             <Spacing lg="0" md="40" />
-            <Accordion />
+            <Accordion data={faq} />
           </Div>
         </Div>
       </Div>
       <Spacing lg="150" md="80" />
-      {/* Start CTA Section */}
       <Div className="container">
         <Cta
           title="Start Your Journey Towards Confidence and Radiance"
@@ -87,7 +118,6 @@ export default function FaqPage() {
           bgSrc="/images/cta_bg.jpeg"
         />
       </Div>
-      {/* End CTA Section */}
     </>
   );
 }
