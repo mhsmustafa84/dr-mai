@@ -23,7 +23,7 @@ const accordionData = {
     {
       question: "What is the best age to consider plastic surgery?",
       answer:
-        "Regarding age considerations, for surgery there is no age requirement; it varies depending on needs and circumstances. Younger people might choose procedures, like breast enhancement or nose reshaping while older individuals often look into options such as facelifts or eyelid surgeries. Dr. Rostom suggests that the best time for a procedure is when a patient feels ready and meets the health requirements. In Dubai, UAE Dr. Rostoms practice only recommends treatments that address your concerns.",
+        "Regarding age considerations, there is no “correct age” for surgery; it varies depending on needs and circumstances. Younger people might choose procedures like breast enhancement or nose reshaping. While older individuals often explore options such as facelifts or eyelid surgeries. Dr. Rostom suggests that the best time for a procedure is when a patient feels ready and meets the health requirements. Dr. Rostom's practice in Dubai, UAE will only recommend treatments that address your concerns.",
     },
     {
       question: "How safe is plastic surgery?",
@@ -52,7 +52,7 @@ const accordionData = {
       question:
         "What distinguishes a plastic surgeon from an aesthetic surgeon?",
       answer:
-        "The main difference lies in their training backgrounds. Plastic surgeons like Dr. Rostom, who predominantly practices in Dubai, UAE, undergo training encompassing both cosmetic and reconstructive procedures. On the other hand, cosmetic surgeons typically focus on enhancing appearance without training in reconstructive surgery. Dr. Rostom's credentials include certifications and fellowships in plastic, aesthetic, and hand surgery, highlighting her expertise and qualifications. What is the best age to consider plastic surgery? Regarding age considerations, there is no “correct age” for surgery; it varies depending on needs and circumstances. Younger people might choose procedures like breast enhancement or nose reshaping. While older individuals often explore options such as facelifts or eyelid surgeries. Dr. Rostom suggests that the best time for a procedure is when a patient feels ready and meets the health requirements. Dr. Rostom's practice in Dubai, UAE will only recommend treatments that address your concerns.",
+        "The main difference lies in their training backgrounds. Plastic surgeons like Dr. Rostom, who predominantly practices in Dubai, UAE, undergo training encompassing both cosmetic and reconstructive procedures. On the other hand, cosmetic surgeons typically focus on enhancing appearance without training in reconstructive surgery. Dr. Rostom's credentials include certifications and fellowships in plastic, aesthetic, and hand surgery, highlighting her expertise and qualifications.",
     },
   ],
 };
