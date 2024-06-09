@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Icon } from "@iconify/react";
+import { useEffect } from "react";
 import Hero11 from "../Hero/Hero11";
 import SectionHeading from "../SectionHeading";
 import ServiceList from "../ServiceList";
@@ -8,8 +7,6 @@ import Div from "../Div";
 import Cta from "../Cta";
 import FunFact3 from "../FunFact/FunFact3";
 import { pageTitle } from "../../helper";
-import Portfolio from "../Portfolio";
-import TestimonialSlider from "../Slider/TestimonialSlider";
 const funfaceData = [
   {
     title:
@@ -27,96 +24,96 @@ const funfaceData = [
     factNumber: "Cultural Sensitivity",
   },
 ];
-const portfolioData = [
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "hand-surgery",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "non-surgical-treatments",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "cosmetic-surgery",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "reconstructive-surgery",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "hand-surgery",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "cosmetic-surgery",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "non-surgical-treatments",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "hand-surgery",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "non-surgical-treatments",
-  },
-  {
-    title: "Title placeholder",
-    subtitle: "SubTitle placeholder",
-    href: "/",
-    src: "/images/mai/placeholder.png",
-    category: "cosmetic-surgery",
-  },
-];
-const categoryMenu = [
-  {
-    title: "Cosmetic",
-    category: "cosmetic-surgery",
-  },
-  {
-    title: "Reconstructive",
-    category: "reconstructive-surgery",
-  },
-  {
-    title: "Hand",
-    category: "hand-surgery",
-  },
-  {
-    title: "Non-Surgical",
-    category: "non-surgical-treatments",
-  },
-];
+// const portfolioData = [
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "hand-surgery",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "non-surgical-treatments",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "cosmetic-surgery",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "reconstructive-surgery",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "hand-surgery",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "cosmetic-surgery",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "non-surgical-treatments",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "hand-surgery",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "non-surgical-treatments",
+//   },
+//   {
+//     title: "Title placeholder",
+//     subtitle: "SubTitle placeholder",
+//     href: "/",
+//     src: "/images/mai/placeholder.png",
+//     category: "cosmetic-surgery",
+//   },
+// ];
+// const categoryMenu = [
+//   {
+//     title: "Cosmetic",
+//     category: "cosmetic-surgery",
+//   },
+//   {
+//     title: "Reconstructive",
+//     category: "reconstructive-surgery",
+//   },
+//   {
+//     title: "Hand",
+//     category: "hand-surgery",
+//   },
+//   {
+//     title: "Non-Surgical",
+//     category: "non-surgical-treatments",
+//   },
+// ];
 
 const educationData = [
   {
@@ -146,8 +143,8 @@ const experienceData = [
 
 export default function PersonalPortfolioHome() {
   pageTitle("Home");
-  const [active, setActive] = useState("all");
-  const [itemShow, setItemShow] = useState(6);
+  // const [active, setActive] = useState("all");
+  // const [itemShow, setItemShow] = useState(6);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -191,7 +188,7 @@ export default function PersonalPortfolioHome() {
           />
         </div>
       </section>
-      <Spacing lg="115" md="55" />
+      {/* <Spacing lg="115" md="55" />
       <Div className="container">
         <Div className="cs-portfolio_1_heading">
           <SectionHeading title="Some recent surgeries" subtitle="" />
@@ -254,10 +251,13 @@ export default function PersonalPortfolioHome() {
           )}
         </Div>
       </Div>
-      <Spacing lg="145" md="80" />
+      <Spacing lg="145" md="80" /> */}
       <section
         className="cs-fixed_bg"
-        style={{ backgroundImage: `url(images/resume_bg.jpeg)` }}
+        style={{
+          // backgroundImage: `url(images/resume_bg.jpeg)`,
+          backgroundColor: "#076e83",
+        }}
       >
         <div className="cs-height_145 cs-height_lg_75" />
         <div className="container">
@@ -340,7 +340,7 @@ export default function PersonalPortfolioHome() {
         </div>
         <div className="cs-height_150 cs-height_lg_80" />
       </section>
-      <section>
+      {/* <section>
         <div className="cs-height_145 cs-height_lg_75" />
         <div className="container">
           <SectionHeading
@@ -349,7 +349,7 @@ export default function PersonalPortfolioHome() {
           />
           <TestimonialSlider />
         </div>
-      </section>
+      </section> */}
       <Cta
         title="Start Your Journey Towards Confidence and Radiance"
         btnText="Book Your Consultation"

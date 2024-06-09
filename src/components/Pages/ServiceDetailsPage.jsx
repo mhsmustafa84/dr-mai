@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { pageTitle } from "../../helper";
-import Accordion from "../Accordion";
 import Cta from "../Cta";
 import IconBox from "../IconBox";
 import PageHeading from "../PageHeading";
 import Div from "../Div";
 import SectionHeading from "../SectionHeading";
-import TestimonialSlider from "../Slider/TestimonialSlider";
 import Spacing from "../Spacing";
 
 const data = {
@@ -164,9 +162,9 @@ export default function ServiceDetailsPage() {
         </Div>
       </Div>
       <Spacing lg="150" md="80" />
-      <TestimonialSlider />
-      <Spacing lg="145" md="80" />
-      <Div className="container cs-shape_wrap_4">
+      {/* <TestimonialSlider />
+      <Spacing lg="145" md="80" /> */}
+      {/* <Div className="container cs-shape_wrap_4">
         <Div className="cs-shape_4"></Div>
         <Div className="cs-shape_4"></Div>
         <Div className="container">
@@ -184,7 +182,7 @@ export default function ServiceDetailsPage() {
           </Div>
         </Div>
       </Div>
-      <Spacing lg="150" md="80" />
+      <Spacing lg="150" md="80" /> */}
       <Div className="container">
         <Cta
           title="Start Your Journey Towards Confidence and Radiance"
