@@ -1175,6 +1175,16 @@
         display: none;
       }
     }
+    &.cs-position_3 {
+      top: 47%;
+      right: -100px;
+      @media (max-width: 991px) {
+        right: 0;
+      }
+      @media (max-width: 575px) {
+        display: none;
+      }
+    }
     h3 {
       font-size: 38px;
       font-weight: 600;

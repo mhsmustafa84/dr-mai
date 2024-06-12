@@ -25,7 +25,7 @@ export default function Hero11({
             <h3 className="mb-0">{experienceNumber}</h3>
             <p className="mb-0">{experienceTitle}</p>
           </div>
-          <div className="cs-hero_card cs-position_2">
+          <div className="cs-hero_card cs-position_3">
             <h3 className="mb-0">{projectTitle}</h3>
             <p className="mb-0">{projectNumber}</p>
           </div>
