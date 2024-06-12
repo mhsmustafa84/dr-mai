@@ -16,7 +16,7 @@ export default function ContactPage() {
     <>
       <PageHeading
         title="Contact me"
-        bgSrc="/images/mai/bg-03.jpg"
+        bgSrc="/images/mai/bg-03.webp"
         pageLinkText="Contact"
       />
       <Spacing lg="150" md="80" />
@@ -24,7 +24,7 @@ export default function ContactPage() {
         <Div className="row">
           <Div>
             <SectionHeading
-              title="Do you have anything <br/>in your mind?"
+              title="Do you have anything <br/>on your mind?"
               subtitle=""
             />
             <Spacing lg="55" md="30" />

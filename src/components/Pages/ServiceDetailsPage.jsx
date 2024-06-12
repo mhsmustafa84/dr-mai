@@ -137,7 +137,7 @@ export default function ServiceDetailsPage() {
     <>
       <PageHeading
         title="Service Details"
-        bgSrc="/images/mai/bg-02.jpg"
+        bgSrc="/images/mai/bg-02.webp"
         pageLinkText={serviceDetails.title}
       />
       <Spacing lg="145" md="80" />

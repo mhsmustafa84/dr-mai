@@ -69,6 +69,14 @@ export default function Header() {
                           </li>
                           <li>
                             <Link
+                              to="/service/non-surgical-treatments"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Non-Surgical Treatments
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
                               to="/service/reconstructive-surgery"
                               onClick={() => setMobileToggle(false)}
                             >
@@ -81,14 +89,6 @@ export default function Header() {
                               onClick={() => setMobileToggle(false)}
                             >
                               Hand Surgery
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/service/non-surgical-treatments"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Non-Surgical Treatments
                             </Link>
                           </li>
                         </ul>

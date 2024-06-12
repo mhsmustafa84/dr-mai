@@ -68,7 +68,7 @@ export default function FaqPage() {
     <>
       <PageHeading
         title="Frequently Asked Questions"
-        bgSrc="/images/mai/bg-04.jpg"
+        bgSrc="/images/mai/bg-04.webp"
         pageLinkText="FAQ"
       />
       <Spacing lg="150" md="80" />

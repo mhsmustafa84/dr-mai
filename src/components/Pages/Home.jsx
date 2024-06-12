@@ -160,14 +160,14 @@ export default function PersonalPortfolioHome() {
         // btnText="See Portfolio"
         imgUrl="/images/mai/1.png"
         experienceTitle="years experience in Plastic Surgery"
-        experienceNumber="07+"
-        projectTitle="250+"
+        experienceNumber="14+"
+        projectTitle="2500+"
         projectNumber="Surgeries completed"
       />
       <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading
-          title="Premier Plastic, Reconstructive, and Hand Surgery Services in Dubai and the UAE"
+          title="Premier Plastic, Reconstructive, and Cosmetic Surgery Services in Dubai and the UAE"
           subtitle=""
           variant="cs-style1 text-center"
         />
