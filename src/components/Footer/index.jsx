@@ -19,19 +19,19 @@ const copyrightLinks = [
 const serviceMenu = [
   {
     title: "Cosmetic Surgery",
-    href: "/service/service-details",
+    href: "/service/cosmetic-surgery",
   },
   {
     title: "Non-Surgical Treatments",
-    href: "/service/service-details",
+    href: "/service/non-surgical-treatments",
   },
   {
     title: "Reconstructive Surgery",
-    href: "/service/service-details",
+    href: "/service/reconstructive-surgery",
   },
   {
     title: "Hand Surgery",
-    href: "/service/service-details",
+    href: "/service/hand-surgery",
   },
 ];
 
