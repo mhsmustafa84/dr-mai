@@ -5,17 +5,23 @@ import Div from "../Div";
 export default function SocialWidget() {
   return (
     <Div className="cs-social_btns cs-style1">
-      <Link to="/" className="cs-center">
+      <Link
+        to="https://eg.linkedin.com/in/mai-rostom-375437256"
+        className="cs-center"
+      >
         <Icon icon="fa6-brands:linkedin-in" />
       </Link>
-      <Link to="/" className="cs-center">
-        <Icon icon="fa6-brands:tiktok" />
-      </Link>
-      <Link to="/" className="cs-center">
+      <Link
+        to="https://www.instagram.com/dr.mairostom?igsh=MXAwN3RjNGUzMXkweA=="
+        className="cs-center"
+      >
         <Icon icon="fa6-brands:instagram" />
       </Link>
-      <Link to="/" className="cs-center">
-        <Icon icon="fa6-brands:youtube" />
+      <Link
+        to="https://www.facebook.com/drmairostom?mibextid=ZbWKwL"
+        className="cs-center"
+      >
+        <Icon icon="fa6-brands:facebook" />
       </Link>
     </Div>
   );

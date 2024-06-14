@@ -8,15 +8,15 @@ const testimonialData = [
   {
     testimonialThumb: "/images/testimonial_1.jpeg",
     testimonialText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!",
+      "Dr Mai addressed my chief complaint in a systematic and organized way, which made me leave very satisfied with the treatment given.",
     avatarName: "Someone Name",
     avatarDesignation: "Job HERE",
-    ratings: "4",
+    ratings: "5",
   },
   {
     testimonialThumb: "/images/testimonial_2.jpeg",
     testimonialText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!",
+      "She made the process surprisingly easy and smooth even though I was initially scared of the procedure.",
     avatarName: "Someone Name",
     avatarDesignation: "Job HERE",
     ratings: "5",
@@ -24,18 +24,55 @@ const testimonialData = [
   {
     testimonialThumb: "/images/testimonial_3.jpeg",
     testimonialText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!",
+      "Dr Rostom did a great job I am very happy with the results.",
     avatarName: "Someone Name",
     avatarDesignation: "Job HERE",
-    ratings: "4.5",
+    ratings: "5",
   },
   {
     testimonialThumb: "/images/testimonial_1.jpeg",
     testimonialText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto! Id nihil dolorum tempora provident. Quibusdam saepe fugit aspernatur beatae amet placeat laudantium provident, necessitatibus neque ad eveniet, sint earum!",
+      "Dr. Mai is very professional, polite and knows what she is doing. I love doing my treatments with her.",
     avatarName: "Someone Name",
     avatarDesignation: "Job HERE",
-    ratings: "3.5",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/images/testimonial_1.jpeg",
+    testimonialText: "I love her and her work on me.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/images/testimonial_1.jpeg",
+    testimonialText:
+      "Dr. Mai is amazing. This is a recurring issue for my teenager and she has made this a comfortable experience for sure.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/images/testimonial_1.jpeg",
+    testimonialText: "She is just amazing and honest.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/images/testimonial_1.jpeg",
+    testimonialText: "Very professional and comforting. Got great result.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/images/testimonial_1.jpeg",
+    testimonialText:
+      "Doctor explains things in detail giving good advice and results as always as promised.",
+    avatarName: "Someone Name",
+    avatarDesignation: "Job HERE",
+    ratings: "5",
   },
 ];
 
@@ -77,7 +114,7 @@ export default function TestimonialSlider() {
         </Div>
         <Div className="container">
           <Div className="cs-testimonial_slider">
-            <Div className="cs-testimonial_slider_left">
+            {/* <Div className="cs-testimonial_slider_left">
               <Slider
                 asNavFor={nav1}
                 ref={(slider2) => setNav2(slider2)}
@@ -98,8 +135,8 @@ export default function TestimonialSlider() {
                   </Div>
                 ))}
               </Slider>
-            </Div>
-            <Div className="cs-testimonial_slider_right">
+            </Div> */}
+            <Div className="cs-testimonial_slider_center">
               <Slider
                 asNavFor={nav2}
                 ref={(slider1) => setNav1(slider1)}

@@ -6,6 +6,7 @@ import Spacing from "../Spacing";
 import Div from "../Div";
 import Cta from "../Cta";
 import FunFact3 from "../FunFact/FunFact3";
+import TestimonialSlider from "../../components/Slider/TestimonialSlider";
 import { pageTitle } from "../../helper";
 const funfaceData = [
   {
@@ -158,7 +159,7 @@ export default function PersonalPortfolioHome() {
         subtitle="Recognized as one of the leading female plastic surgeons in Dubai, specializing in a blend of aesthetic enhancements and reconstructive procedures. Her practice is dedicated to transforming lives through personalized care, supported by the latest advancements in plastic surgery."
         btnLink="/portfolio"
         // btnText="See Portfolio"
-        imgUrl="/images/mai/1.png"
+        imgUrl="/images/mai/1.webp"
         experienceTitle="years experience in Plastic Surgery"
         experienceNumber="14+"
         projectTitle="2500+"
@@ -340,7 +341,7 @@ export default function PersonalPortfolioHome() {
         </div>
         <div className="cs-height_150 cs-height_lg_80" />
       </section>
-      {/* <section>
+      <section>
         <div className="cs-height_145 cs-height_lg_75" />
         <div className="container">
           <SectionHeading
@@ -349,7 +350,7 @@ export default function PersonalPortfolioHome() {
           />
           <TestimonialSlider />
         </div>
-      </section> */}
+      </section>
       <Cta
         title="Start Your Journey Towards Confidence and Radiance"
         btnText="Book Your Consultation"

@@ -1,5 +1,5 @@
-import React from 'react';
-import './customcursor.scss';
+import React from "react";
+import "./customcursor.scss";
 
 const CustomCursor = () => {
   const cursorSm = React.useRef(null);
@@ -15,11 +15,12 @@ const CustomCursor = () => {
   });
 
   React.useEffect(() => {
-    document.addEventListener('mousemove', event => {
+    document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
 
       const mouseX = clientX;
       const mouseY = clientY;
+      if (!positionRef) return;
 
       positionRef.current.mouseX = mouseX - cursorSm.current.clientWidth / 2;
       positionRef.current.mouseY = mouseY - cursorSm.current.clientHeight / 2;
@@ -32,6 +33,9 @@ const CustomCursor = () => {
 
   React.useEffect(() => {
     const followMouse = () => {
+      if (!positionRef) return;
+      if (!cursorSm) return;
+      if (!cursorLg) return;
       positionRef.current.key = requestAnimationFrame(followMouse);
       const {
         mouseX,

@@ -1,4 +1,3 @@
-import React from "react";
 import Div from "../Div";
 import ContactInfoWidget from "../Widget/ContactInfoWidget";
 import MenuWidget from "../Widget/MenuWidget";
@@ -23,15 +22,15 @@ const serviceMenu = [
     href: "/service/service-details",
   },
   {
+    title: "Non-Surgical Treatments",
+    href: "/service/service-details",
+  },
+  {
     title: "Reconstructive Surgery",
     href: "/service/service-details",
   },
   {
     title: "Hand Surgery",
-    href: "/service/service-details",
-  },
-  {
-    title: "Non-Surgical Treatments",
     href: "/service/service-details",
   },
 ];

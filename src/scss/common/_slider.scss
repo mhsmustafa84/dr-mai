@@ -111,7 +111,7 @@
     overflow: hidden;
     color: transparent;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 5px;
       width: 5px;
@@ -305,6 +305,9 @@
 .cs-testimonial_slider_right {
   width: 65%;
 }
+.cs-testimonial_slider_center {
+  width: 100%;
+}
 .swiper-pagination {
   display: flex;
   justify-content: center;
@@ -326,7 +329,7 @@
     opacity: 1;
     transition: all 0.3s ease;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 5px;
       width: 5px;
@@ -391,52 +394,52 @@
     }
     &:nth-child(1) {
       &::after {
-        content: '01';
+        content: "01";
       }
     }
     &:nth-child(2) {
       &::after {
-        content: '02';
+        content: "02";
       }
     }
     &:nth-child(3) {
       &::after {
-        content: '03';
+        content: "03";
       }
     }
     &:nth-child(4) {
       &::after {
-        content: '04';
+        content: "04";
       }
     }
     &:nth-child(5) {
       &::after {
-        content: '05';
+        content: "05";
       }
     }
     &:nth-child(6) {
       &::after {
-        content: '06';
+        content: "06";
       }
     }
     &:nth-child(7) {
       &::after {
-        content: '07';
+        content: "07";
       }
     }
     &:nth-child(8) {
       &::after {
-        content: '08';
+        content: "08";
       }
     }
     &:nth-child(9) {
       &::after {
-        content: '09';
+        content: "09";
       }
     }
     &:nth-child(10) {
       &::after {
-        content: '10';
+        content: "10";
       }
     }
   }

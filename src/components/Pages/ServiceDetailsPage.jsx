@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { pageTitle } from "../../helper";
 import Cta from "../Cta";
-import IconBox from "../IconBox";
 import PageHeading from "../PageHeading";
 import Div from "../Div";
 import SectionHeading from "../SectionHeading";
 import Spacing from "../Spacing";
+import IconBoxStyle3 from "../IconBox/IconBoxStyle3";
 
 const data = {
   "cosmetic-surgery": {
@@ -15,34 +15,161 @@ const data = {
       "Combines artistic vision with surgical precision to enhance your natural beauty",
     subServices: [
       {
-        title: "Blepharoplasty",
-        subTitle:
-          "Reshape and refine your eyes to complement your facial features.",
+        title: "Face",
+        categories: [
+          {
+            title: "Facelift",
+            subCategories: [
+              "Mini facelift",
+              "Full facelift",
+              "Deep plane facelift",
+            ],
+          },
+          {
+            title: "Necklift",
+            subCategories: [],
+          },
+          {
+            title: "Brow lift",
+            subCategories: [],
+          },
+          {
+            title: "Lip lift",
+            subCategories: [],
+          },
+          {
+            title: "Lipofilling to the face",
+            subCategories: ["Microfat", "Nanofat"],
+          },
+          {
+            title: "Buccal fat removal ",
+            subCategories: [],
+          },
+          {
+            title: "Double chin liposuction",
+            subCategories: [],
+          },
+        ],
         icon: "/images/icons/service_icon_1.svg",
       },
       {
-        title: "Facelift",
-        subTitle:
-          "Restore a youthful appearance with our advanced and subtle lifting techniques.",
-        icon: "/images/icons/service_icon_2.svg",
-      },
-      {
-        title: "Breast Augmentation",
-        subTitle:
-          "Perfectly balanced enhancements designed for natural and beautiful results.",
-        icon: "/images/icons/service_icon_3.svg",
-      },
-      {
-        title: "Abdominoplasty",
-        subTitle:
-          "Repair abdominal muscles and remove excess skin and fat for a beautifully contoured waist.",
+        title: "Breast",
+        categories: [
+          {
+            title: "Breast augmentation",
+            subCategories: [
+              "Silicone implants",
+              "Lipofilling (fat grafting) to breasts ",
+            ],
+          },
+          {
+            title: "Breast reduction",
+            subCategories: [],
+          },
+          {
+            title: "Breast lift (mastopexy)",
+            subCategories: [],
+          },
+        ],
         icon: "/images/icons/service_icon_4.svg",
       },
       {
-        title: "Liposuction",
-        subTitle:
-          "Sculpt your body by removing unwanted fat with precision and care.",
+        title: "Body",
+        categories: [
+          {
+            title: "Liposuction",
+            subCategories: [
+              "Power assisted liposuction (PAL)",
+              "VASER",
+              "J Plasma (Renuvion) ",
+            ],
+          },
+          {
+            title: "Tummy tuck (abdominoplasty)",
+            subCategories: ["Mini tummy tuck", "Full tummy tuck"],
+          },
+        ],
         icon: "/images/icons/service_icon_5.svg",
+      },
+      {
+        title: "Body lift",
+        categories: [
+          {
+            title: "Lipofilling (fat grafting)",
+            subCategories: ["Brazilian butt lift (BBL)", "Hip dips", "Calves"],
+          },
+          {
+            title: "Arm lift",
+            subCategories: [],
+          },
+          {
+            title: "Thigh lift",
+            subCategories: [],
+          },
+          {
+            title: "Labiaplasty",
+            subCategories: [],
+          },
+          {
+            title: "Mommy makeover and combination surgeries",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_5.svg",
+      },
+      {
+        title: "Hands",
+        categories: [
+          {
+            title: "Lipofilling to hands",
+            subCategories: [],
+          },
+          {
+            title: "Dermal fillers and collagen stimulators",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_5.svg",
+      },
+      {
+        title: "Eyelids",
+        categories: [
+          {
+            title: "Upper blepharoplasty",
+            subCategories: [],
+          },
+          {
+            title: "Lower blepharoplasty",
+            subCategories: [],
+          },
+          {
+            title: "Combined upper and lower blepharoplasty",
+            subCategories: [],
+          },
+          {
+            title: "Ptosis repair",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_2.svg",
+      },
+      {
+        title: "Ears",
+        categories: [
+          {
+            title: "Prominent ear correction",
+            subCategories: [],
+          },
+          {
+            title: "Earlobe repair",
+            subCategories: [],
+          },
+          {
+            title: "Earlobe reduction",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_3.svg",
       },
     ],
   },
@@ -53,19 +180,79 @@ const data = {
     subServices: [
       {
         title: "Breast Reconstruction",
-        subTitle:
-          "Compassionate and comprehensive reconstructive options post-mastectomy.",
+        categories: [
+          {
+            title: "Lipofilling to breasts",
+            subCategories: [],
+          },
+          {
+            title: "Free flap reconstruction",
+            subCategories: [],
+          },
+        ],
         icon: "/images/icons/service_icon_1.svg",
       },
       {
-        title: "Scar Revision",
-        subTitle: "Minimize the appearance of scars and improve skin texture.",
-        icon: "/images/icons/service_icon_2.svg",
+        title: "Scar revision",
+        categories: [
+          {
+            title: "Z-plasty",
+            subCategories: [],
+          },
+          {
+            title: "Subcision and fat grafting",
+            subCategories: [],
+          },
+          {
+            title: "Keloid treatmen",
+            subCategories: [
+              "Intralesional steroid injections",
+              "Surgical removal",
+              "Combination therapies",
+            ],
+          },
+        ],
+        icon: "/images/icons/service_icon_1.svg",
       },
       {
-        title: "Skin cancer removal ",
-        subTitle: "Skin cancer removal and reconstruction",
-        icon: "/images/icons/service_icon_3.svg",
+        title: "Skin cancer removal and reconstruction",
+        categories: [
+          {
+            title: "Basal cell carcinoma (BCC)",
+            subCategories: [],
+          },
+          {
+            title: "Squamous cell carcinoma (SCC)",
+            subCategories: [],
+          },
+          {
+            title: "Pigmented lesions and melanomas",
+            subCategories: [],
+          },
+          {
+            title: "Suspicious lesions",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_1.svg",
+      },
+      {
+        title: "Lumps and bumps",
+        categories: [
+          {
+            title: "Lipoma removal",
+            subCategories: [],
+          },
+          {
+            title: "Cyst removal",
+            subCategories: [],
+          },
+          {
+            title: "Benign skin lesions",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_1.svg",
       },
     ],
   },
@@ -75,27 +262,56 @@ const data = {
       "Specializes in hand surgery, addressing both aesthetic and functional concerns with outstanding outcomes",
     subServices: [
       {
-        title: "Carpal/cubital Tunnel Release",
-        subTitle:
-          "Relieve the symptoms of nerve compression with minimally invasive techniques.",
+        title: "Nerve decompression",
+        categories: [
+          {
+            title: "Carpal tunnel release",
+            subCategories: [],
+          },
+          {
+            title: "Cubital tunnel release",
+            subCategories: [],
+          },
+        ],
         icon: "/images/icons/service_icon_1.svg",
       },
       {
-        title: "Tendon Repairs",
-        subTitle:
-          "Restore the function and flexibility of injured tendons in the hand.",
+        title: "Dupuytrens disease",
+        categories: [
+          {
+            title: "Needle fasciotomy",
+            subCategories: [],
+          },
+          {
+            title: "Surgical fasciectomy",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_1.svg",
+      },
+      {
+        title: "Trigger finger treatment",
+        categories: [
+          {
+            title: "Steroid injections",
+            subCategories: [],
+          },
+          {
+            title: "Surgical release",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_1.svg",
+      },
+      {
+        title: "Tendon repair and reconstruction",
+        categories: [],
         icon: "/images/icons/service_icon_2.svg",
       },
       {
         title: "Fracture Repair",
-        subTitle:
-          "Expert care for hand and wrist fractures, ensuring optimal healing and recovery.",
+        categories: [],
         icon: "/images/icons/service_icon_3.svg",
-      },
-      {
-        title: "Lipofilling to hands",
-        subTitle: "Restore volume and rejuvenate the hands with your own fat.",
-        icon: "/images/icons/service_icon_4.svg",
       },
     ],
   },
@@ -105,20 +321,107 @@ const data = {
       "Discover our array of non-surgical treatments designed to rejuvenate and enhance without the need for surgery",
     subServices: [
       {
-        title: "Botox and Dermal Fillers",
-        subTitle:
-          "Smooth wrinkles and restore volume for a youthful complexion.",
+        title: "Botulinum toxin (Botox/ Dysport)",
+        categories: [
+          {
+            title: "Dynamic facial lines",
+            subCategories: [],
+          },
+          {
+            title: "Hyperhidrosis (excessive sweating)",
+            subCategories: [],
+          },
+          {
+            title: "Masseter (TMJ pain) and facial slimming",
+            subCategories: [],
+          },
+          {
+            title: "Trapezium (traptox)",
+            subCategories: [],
+          },
+          {
+            title: "Migraine relief",
+            subCategories: [],
+          },
+        ],
         icon: "/images/icons/service_icon_1.svg",
       },
       {
-        title: "Microneedling with PRP",
-        subTitle: "Improve skin texture, tone, and overall appearance.",
-        icon: "/images/icons/service_icon_2.svg",
+        title: "Dermal fillers (Restylane/ Juvederm/ Boletero)",
+        categories: [
+          {
+            title: "Facial augmentation",
+            subCategories: [],
+          },
+          {
+            title: "Liquid rhinoplasty",
+            subCategories: [],
+          },
+          {
+            title: "Liquid facelift",
+            subCategories: [],
+          },
+          {
+            title: "Tear trough correction",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_1.svg",
+      },
+      {
+        title: "Dissolving of hyaluronic acid fillers",
+        categories: [],
+        icon: "/images/icons/service_icon_1.svg",
       },
       {
         title: "Skin boosters",
-        subTitle: "Intense hydration and collagen stimulation.",
-        icon: "/images/icons/service_icon_3.svg",
+        categories: [
+          {
+            title: "Restylane Vital and Vital light",
+            subCategories: [],
+          },
+          {
+            title: "Profhilo",
+            subCategories: [],
+          },
+          {
+            title: "Juvederm Volite",
+            subCategories: [],
+          },
+          {
+            title: "RRS (Hyalift 75, HA Long Lasting, HA Eyes)",
+            subCategories: [],
+          },
+          {
+            title: "Exosomes",
+            subCategories: [],
+          },
+          {
+            title: "Polynucleotides",
+            subCategories: [],
+          },
+        ],
+        icon: "/images/icons/service_icon_1.svg",
+      },
+      {
+        title: "Collagen stimulators (Sculptra/ Radiesse)",
+        categories: [],
+        icon: "/images/icons/service_icon_1.svg",
+      },
+      {
+        title: "Microneedling",
+        categories: [],
+        icon: "/images/icons/service_icon_1.svg",
+      },
+      {
+        title: "Fat dissolving injections",
+        categories: [],
+        icon: "/images/icons/service_icon_1.svg",
+      },
+      {
+        title: "Body fillers (Hyacorp)",
+        categories: [],
+        icon: "/images/icons/service_icon_1.svg",
       },
     ],
   },
@@ -151,10 +454,10 @@ export default function ServiceDetailsPage() {
         <Div className="row">
           {serviceDetails.subServices.map((item, index) => (
             <Div key={index} className="col-lg-4">
-              <IconBox
+              <IconBoxStyle3
                 icon={item.icon}
                 title={item.title}
-                subtitle={item.subTitle}
+                categories={item.categories}
               />
               <Spacing lg="30" md="30" />
             </Div>
