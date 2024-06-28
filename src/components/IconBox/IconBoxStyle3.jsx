@@ -12,15 +12,8 @@ export default function IconBoxStyle3({ title, categories, icon }) {
       {categories.map((category) => (
         <>
           <h5 key={category.title} className="cs-iconbox_subtitle">
-            &#x2022; {parse(category.title)}
+            {parse(category.title)}
           </h5>
-          <div style={{ marginBottom: "20px", marginTop: "-10px" }}>
-            {category.subCategories.map((subCategory) => (
-              <Div key={subCategory} className="cs-iconbox_subtitle">
-                - {parse(subCategory)}
-              </Div>
-            ))}
-          </div>
         </>
       ))}
     </Div>

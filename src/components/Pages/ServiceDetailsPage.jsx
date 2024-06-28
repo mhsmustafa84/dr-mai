@@ -19,157 +19,111 @@ const data = {
         categories: [
           {
             title: "Facelift",
-            subCategories: [
-              "Mini facelift",
-              "Full facelift",
-              "Deep plane facelift",
-            ],
           },
           {
             title: "Necklift",
-            subCategories: [],
           },
           {
             title: "Brow lift",
-            subCategories: [],
           },
           {
             title: "Lip lift",
-            subCategories: [],
           },
           {
             title: "Lipofilling to the face",
-            subCategories: ["Microfat", "Nanofat"],
           },
           {
             title: "Buccal fat removal ",
-            subCategories: [],
           },
           {
             title: "Double chin liposuction",
-            subCategories: [],
+          },
+          {
+            title: "Eyelids",
+          },
+          {
+            title: "Upper blepharoplasty",
+          },
+          {
+            title: "Lower blepharoplasty",
+          },
+          {
+            title: "Combined upper and lower blepharoplasty",
+          },
+          {
+            title: "Ptosis repair",
+          },
+          {
+            title: "Ears",
+          },
+          {
+            title: "Prominent ear correction",
+          },
+          {
+            title: "Earlobe repair",
+          },
+          {
+            title: "Earlobe reduction",
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Face.webp",
       },
       {
         title: "Breast",
         categories: [
           {
             title: "Breast augmentation",
-            subCategories: [
-              "Silicone implants",
-              "Lipofilling (fat grafting) to breasts ",
-            ],
           },
           {
             title: "Breast reduction",
-            subCategories: [],
           },
           {
             title: "Breast lift (mastopexy)",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_4.svg",
+        icon: "/images/icons/Breast.webp",
       },
       {
         title: "Body",
         categories: [
           {
             title: "Liposuction",
-            subCategories: [
-              "Power assisted liposuction (PAL)",
-              "VASER",
-              "J Plasma (Renuvion) ",
-            ],
           },
           {
             title: "Tummy tuck (abdominoplasty)",
-            subCategories: ["Mini tummy tuck", "Full tummy tuck"],
           },
-        ],
-        icon: "/images/icons/service_icon_5.svg",
-      },
-      {
-        title: "Body lift",
-        categories: [
+          {
+            title: "Body lift",
+          },
           {
             title: "Lipofilling (fat grafting)",
-            subCategories: ["Brazilian butt lift (BBL)", "Hip dips", "Calves"],
           },
           {
             title: "Arm lift",
-            subCategories: [],
           },
           {
             title: "Thigh lift",
-            subCategories: [],
           },
           {
             title: "Labiaplasty",
-            subCategories: [],
           },
           {
             title: "Mommy makeover and combination surgeries",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_5.svg",
+        icon: "/images/icons/Body.webp",
       },
       {
         title: "Hands",
         categories: [
           {
             title: "Lipofilling to hands",
-            subCategories: [],
           },
           {
             title: "Dermal fillers and collagen stimulators",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_5.svg",
-      },
-      {
-        title: "Eyelids",
-        categories: [
-          {
-            title: "Upper blepharoplasty",
-            subCategories: [],
-          },
-          {
-            title: "Lower blepharoplasty",
-            subCategories: [],
-          },
-          {
-            title: "Combined upper and lower blepharoplasty",
-            subCategories: [],
-          },
-          {
-            title: "Ptosis repair",
-            subCategories: [],
-          },
-        ],
-        icon: "/images/icons/service_icon_2.svg",
-      },
-      {
-        title: "Ears",
-        categories: [
-          {
-            title: "Prominent ear correction",
-            subCategories: [],
-          },
-          {
-            title: "Earlobe repair",
-            subCategories: [],
-          },
-          {
-            title: "Earlobe reduction",
-            subCategories: [],
-          },
-        ],
-        icon: "/images/icons/service_icon_3.svg",
+        icon: "/images/icons/Hands.webp",
       },
     ],
   },
@@ -183,135 +137,113 @@ const data = {
         categories: [
           {
             title: "Lipofilling to breasts",
-            subCategories: [],
           },
           {
             title: "Free flap reconstruction",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Breastreconstruction.webp",
       },
       {
         title: "Scar revision",
         categories: [
           {
             title: "Z-plasty",
-            subCategories: [],
           },
           {
             title: "Subcision and fat grafting",
-            subCategories: [],
           },
           {
-            title: "Keloid treatmen",
-            subCategories: [
-              "Intralesional steroid injections",
-              "Surgical removal",
-              "Combination therapies",
-            ],
+            title: "Keloid treatment",
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Scarrevision.webp",
       },
       {
         title: "Skin cancer removal and reconstruction",
         categories: [
           {
             title: "Basal cell carcinoma (BCC)",
-            subCategories: [],
           },
           {
             title: "Squamous cell carcinoma (SCC)",
-            subCategories: [],
           },
           {
             title: "Pigmented lesions and melanomas",
-            subCategories: [],
           },
           {
             title: "Suspicious lesions",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Skincancerremovalandreconstruction.webp",
       },
       {
         title: "Lumps and bumps",
         categories: [
           {
             title: "Lipoma removal",
-            subCategories: [],
           },
           {
             title: "Cyst removal",
-            subCategories: [],
           },
           {
             title: "Benign skin lesions",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Lumpsandbumps.webp",
       },
     ],
   },
   "hand-surgery": {
     title: "Hand Surgery",
     subTitle:
-      "Specializes in hand surgery, addressing both aesthetic and functional concerns with outstanding outcomes",
+      "Surgery of the hand addresses both aesthetic and functional concerns",
     subServices: [
       {
         title: "Nerve decompression",
         categories: [
           {
             title: "Carpal tunnel release",
-            subCategories: [],
           },
           {
             title: "Cubital tunnel release",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Nervedecompression.webp",
       },
       {
         title: "Dupuytrens disease",
         categories: [
           {
             title: "Needle fasciotomy",
-            subCategories: [],
           },
           {
             title: "Surgical fasciectomy",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Nervedecompression.webp",
       },
       {
         title: "Trigger finger treatment",
         categories: [
           {
             title: "Steroid injections",
-            subCategories: [],
           },
           {
             title: "Surgical release",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Nervedecompression.webp",
       },
       {
         title: "Tendon repair and reconstruction",
         categories: [],
-        icon: "/images/icons/service_icon_2.svg",
+        icon: "/images/icons/Nervedecompression.webp",
       },
       {
         title: "Fracture Repair",
         categories: [],
-        icon: "/images/icons/service_icon_3.svg",
+        icon: "/images/icons/Nervedecompression.webp",
       },
     ],
   },
@@ -325,103 +257,88 @@ const data = {
         categories: [
           {
             title: "Dynamic facial lines",
-            subCategories: [],
           },
           {
             title: "Hyperhidrosis (excessive sweating)",
-            subCategories: [],
           },
           {
             title: "Masseter (TMJ pain) and facial slimming",
-            subCategories: [],
           },
           {
             title: "Trapezium (traptox)",
-            subCategories: [],
           },
           {
             title: "Migraine relief",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Botulinumtoxin.webp",
       },
       {
         title: "Dermal fillers (Restylane/ Juvederm/ Boletero)",
         categories: [
           {
             title: "Facial augmentation",
-            subCategories: [],
           },
           {
             title: "Liquid rhinoplasty",
-            subCategories: [],
           },
           {
             title: "Liquid facelift",
-            subCategories: [],
           },
           {
             title: "Tear trough correction",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Dermalfillers.webp",
       },
       {
         title: "Dissolving of hyaluronic acid fillers",
         categories: [],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Dissolvingofhyaluronicacidfillers.webp",
       },
       {
         title: "Skin boosters",
         categories: [
           {
             title: "Restylane Vital and Vital light",
-            subCategories: [],
           },
           {
             title: "Profhilo",
-            subCategories: [],
           },
           {
             title: "Juvederm Volite",
-            subCategories: [],
           },
           {
             title: "RRS (Hyalift 75, HA Long Lasting, HA Eyes)",
-            subCategories: [],
           },
           {
             title: "Exosomes",
-            subCategories: [],
           },
           {
             title: "Polynucleotides",
-            subCategories: [],
           },
         ],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Skinboosters.webp",
       },
       {
         title: "Collagen stimulators (Sculptra/ Radiesse)",
         categories: [],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Collagenstimulators.webp",
       },
       {
         title: "Microneedling",
         categories: [],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Microneedling.webp",
       },
       {
         title: "Fat dissolving injections",
         categories: [],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Fat-dissolvinginjections.webp",
       },
       {
         title: "Body fillers (Hyacorp)",
         categories: [],
-        icon: "/images/icons/service_icon_1.svg",
+        icon: "/images/icons/Bodyfillers.webp",
       },
     ],
   },

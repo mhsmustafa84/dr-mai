@@ -165,7 +165,10 @@ export default function Header() {
             </h2>
           </Div>
           <Div className="cs-side_header_box">
-            <ContactInfoWidget title="Contact me" withIcon />
+            <ContactInfoWidget
+              title="Want to find out more? Ways to connect with me"
+              withIcon
+            />
           </Div>
           <Div className="cs-side_header_box">
             <Newsletter
