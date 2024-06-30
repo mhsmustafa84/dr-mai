@@ -24,7 +24,7 @@ export default function AboutPage() {
         <Div className="row">
           <Div className="col-xl-5 col-lg-7">
             <SectionHeading
-              title="A Leading Light in Plastic Surgery Across UAE"
+              title="A Leading Light in Plastic Surgery Across the UAE"
               subtitle=""
             >
               <Spacing lg="30" md="20" />

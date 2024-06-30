@@ -160,10 +160,10 @@ export default function PersonalPortfolioHome() {
         btnLink="/portfolio"
         // btnText="See Portfolio"
         imgUrl="/images/mai/1.webp"
-        experienceTitle="years experience in Plastic Surgery"
+        experienceTitle="Years Experience in Plastic Surgery"
         experienceNumber="14+"
-        projectTitle="2500+"
-        projectNumber="Surgeries completed"
+        projectTitle="4000+"
+        projectNumber="Surgeries Completed"
       />
       <Spacing lg="145" md="80" />
       <Div className="container">
@@ -178,7 +178,7 @@ export default function PersonalPortfolioHome() {
       <Spacing lg="120" md="50" />
       <section
         className="cs-bg"
-        style={{ backgroundImage: "url(images/funfact_bg.jpeg)" }}
+        style={{ backgroundImage: "url(./images/mai/bg-03.webp)" }}
       >
         <div className="container">
           <FunFact3
@@ -345,7 +345,7 @@ export default function PersonalPortfolioHome() {
         title="Start Your Journey Towards Confidence and Radiance"
         btnText="Book Your Consultation"
         btnLink="/contact"
-        bgSrc="/images/cta_bg_5.jpeg"
+        bgSrc="/images/mai/bg-02.webp"
         variant="cs-type_1"
       />
       <section>
@@ -360,7 +360,7 @@ export default function PersonalPortfolioHome() {
       </section>
       <Div className="cs-google_map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462561.6574537445!2d55.22748795!3d25.076022449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z2K_YqNmKIC0g2KfZhNil2YXYp9ix2KfYqiDYp9mE2LnYsdio2YrYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1713174339860!5m2!1sar!2seg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.477879567077!2d55.353957799999996!3d25.2208245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d19322467bb%3A0x3475ac3ba87fadc!2sDr.%20Mai%20Rostom%20%7C%20Plastic%2C%20Reconstructive%20%26%20Aesthetic%20Surgery!5e0!3m2!1sar!2seg!4v1719741237538!5m2!1sar!2seg"
           allowFullScreen
           title="Google Map"
         />

@@ -4,7 +4,7 @@ import Div from "../Div";
 
 export default function IconBoxStyle3({ title, categories, icon }) {
   return (
-    <Div className="cs-iconbox cs-style text-center">
+    <Div className="cs-iconbox cs-style1 text-center">
       <Div className="cs-iconbox_icon">
         <img src={icon} alt="Icon" />
       </Div>

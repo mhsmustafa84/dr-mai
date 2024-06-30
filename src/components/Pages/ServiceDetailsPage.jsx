@@ -38,9 +38,12 @@ const data = {
           {
             title: "Double chin liposuction",
           },
-          {
-            title: "Eyelids",
-          },
+        ],
+        icon: "/images/icons/Face.webp",
+      },
+      {
+        title: "Eyelids",
+        categories: [
           {
             title: "Upper blepharoplasty",
           },
@@ -53,9 +56,12 @@ const data = {
           {
             title: "Ptosis repair",
           },
-          {
-            title: "Ears",
-          },
+        ],
+        icon: "/images/icons/Eyelids.webp",
+      },
+      {
+        title: "Ears",
+        categories: [
           {
             title: "Prominent ear correction",
           },
@@ -66,7 +72,7 @@ const data = {
             title: "Earlobe reduction",
           },
         ],
-        icon: "/images/icons/Face.webp",
+        icon: "/images/icons/Ears.webp",
       },
       {
         title: "Breast",
@@ -79,6 +85,9 @@ const data = {
           },
           {
             title: "Breast lift (mastopexy)",
+          },
+          {
+            title: "Gynaecomastia (male breast reduction surgery)",
           },
         ],
         icon: "/images/icons/Breast.webp",
@@ -93,9 +102,6 @@ const data = {
             title: "Tummy tuck (abdominoplasty)",
           },
           {
-            title: "Body lift",
-          },
-          {
             title: "Lipofilling (fat grafting)",
           },
           {
@@ -103,6 +109,9 @@ const data = {
           },
           {
             title: "Thigh lift",
+          },
+          {
+            title: "Body lift",
           },
           {
             title: "Labiaplasty",
@@ -292,11 +301,6 @@ const data = {
         icon: "/images/icons/Dermalfillers.webp",
       },
       {
-        title: "Dissolving of hyaluronic acid fillers",
-        categories: [],
-        icon: "/images/icons/Dissolvingofhyaluronicacidfillers.webp",
-      },
-      {
         title: "Skin boosters",
         categories: [
           {
@@ -319,6 +323,11 @@ const data = {
           },
         ],
         icon: "/images/icons/Skinboosters.webp",
+      },
+      {
+        title: "Dissolving of hyaluronic acid fillers",
+        categories: [],
+        icon: "/images/icons/Dissolvingofhyaluronicacidfillers.webp",
       },
       {
         title: "Collagen stimulators (Sculptra/ Radiesse)",

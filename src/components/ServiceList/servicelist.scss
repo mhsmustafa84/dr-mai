@@ -1,4 +1,4 @@
-@import '../../scss/default/color_variable';
+@import "../../scss/default/color_variable";
 .cs-iconbox_3_list {
   position: relative;
   padding-left: 550px;
@@ -101,7 +101,7 @@
       position: relative;
       &::before {
         counter-increment: number-counter;
-        content: counter(number-counter, decimal-leading-zero) '. ';
+        content: counter(number-counter, decimal-leading-zero) ". ";
         font-weight: 600;
         color: #fff;
         position: absolute;

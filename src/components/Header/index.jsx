@@ -161,14 +161,11 @@ export default function Header() {
           </Link>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
-              Do you have anything in your <br /> mind? Keep connect me.
+              Ready to take the next step? <br /> Book a consultation!
             </h2>
           </Div>
           <Div className="cs-side_header_box">
-            <ContactInfoWidget
-              title="Want to find out more? Ways to connect with me"
-              withIcon
-            />
+            <ContactInfoWidget title="" withIcon />
           </Div>
           <Div className="cs-side_header_box">
             <Newsletter

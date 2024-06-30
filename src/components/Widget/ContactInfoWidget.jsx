@@ -14,9 +14,9 @@ export default function ContactInfoWidget({ withIcon, title }) {
             ""
           )}
           Mobile Number <br />
-          +971 04 706 4000
+          +971 4 706 4000
         </li>
-        {/* <li>
+        <li>
           {withIcon ? (
             <span className="cs-accent_color">
               <Icon icon="mdi:envelope" />
@@ -24,8 +24,9 @@ export default function ContactInfoWidget({ withIcon, title }) {
           ) : (
             ""
           )}
-          Email
-        </li> */}
+          Email <br />
+          Mai.rostom@alfuttaim.com
+        </li>
         <li>
           {withIcon ? (
             <span className="cs-accent_color">
